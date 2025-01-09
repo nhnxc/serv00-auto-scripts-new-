@@ -38,7 +38,8 @@ jobs:
         run: npm install puppeteer axios
 
       - name: Disable sandbox
-        run: PUPPETEER_SKIP_CHROMIUM_SANDBOX=true node src/main.js
+        run: PUPPETEER_SKIP_CHROMIUM_SANDBOX=true node src/main.js --no-sandbox
+
 
   
       - name: Login into Serv00/CT8
